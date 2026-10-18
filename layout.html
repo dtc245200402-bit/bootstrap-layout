@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Shopping Mall | Layout Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="poly.css">
+</head>
+<body>
+<div class="container shop-container">
+    <!-- Header -->
+    <header class="row shop-header">
+        <div class="col-xs-12">
+            <div class="shopping-mall">
+                <p class="eyebrow">MUA SẮM THÔNG MINH</p>
+                <h1>Online shopping mall</h1>
+                <h5>The center point of the professional programming</h5>
+            </div>
+            <img class="header-object hidden-xs" src="images/header-object.svg" alt="Minh họa mua sắm trực tuyến">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse shop-navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
+                    <span class="sr-only">Mở menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs" href="#home">Shopping Mall</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                    <li><a href="#intro"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu</a></li>
+                    <li><a href="#contact"><span class="glyphicon glyphicon-earphone"></span> Liên hệ</a></li>
+                    <li><a href="mailto:hello@example.com"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                    <li><a href="#faq"><span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#account" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Tài khoản <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#login">Đăng nhập</a></li>
+                            <li><a href="#register">Đăng ký</a></li>
+                            <li><a href="#forgot-password">Quên mật khẩu</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#profile">Thông tin tài khoản</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="row shop-content" id="home">
+        <article class="col-sm-9 product-area">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">GỢI Ý HÔM NAY</p>
+                    <h2>Sản phẩm nổi bật</h2>
+                </div>
+                <span class="product-count">06 sản phẩm</span>
+            </div>
+            <div class="row product-grid">
+                <div class="col-xs-6 col-md-4 poly-prod">
+                    <div class="panel panel-default product-card">
+                        <div class="panel-heading"><h3 class="panel-title">Điện thoại Nokia</h3><span class="label label-success">Nổi bật</span></div>
+                        <div class="panel-body"><img src="images/phone.svg" alt="Điện thoại Nokia" class="img-responsive center-block"><p class="product-description">Thiết kế gọn nhẹ, kết nối tiện lợi.</p></div>
+                        <div class="panel-footer"><span class="price">$100.25</span><a class="btn btn-primary btn-xs" href="#phone" aria-label="Xem điện thoại Nokia">Xem ngay</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 poly-prod">
+                    <div class="panel panel-default product-card">
+                        <div class="panel-heading"><h3 class="panel-title">Laptop văn phòng</h3></div>
+                        <div class="panel-body"><img src="images/laptop.svg" alt="Laptop văn phòng" class="img-responsive center-block"><p class="product-description">Hiệu năng ổn định cho công việc hằng ngày.</p></div>
+                        <div class="panel-footer"><span class="price">$550.00</span><a class="btn btn-primary btn-xs" href="#laptop" aria-label="Xem laptop">Xem ngay</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 poly-prod">
+                    <div class="panel panel-default product-card">
+                        <div class="panel-heading"><h3 class="panel-title">Máy tính để bàn</h3></div>
+                        <div class="panel-body"><img src="images/desktop.svg" alt="Máy tính để bàn" class="img-responsive center-block"><p class="product-description">Lựa chọn phù hợp cho góc làm việc.</p></div>
+                        <div class="panel-footer"><span class="price">$720.50</span><a class="btn btn-primary btn-xs" href="#desktop" aria-label="Xem máy tính để bàn">Xem ngay</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 poly-prod">
+                    <div class="panel panel-default product-card">
+                        <div class="panel-heading"><h3 class="panel-title">Quạt máy</h3></div>
+                        <div class="panel-body"><img src="images/fan.svg" alt="Quạt máy" class="img-responsive center-block"><p class="product-description">Làm mát dịu nhẹ cho căn phòng.</p></div>
+                        <div class="panel-footer"><span class="price">$35.80</span><a class="btn btn-primary btn-xs" href="#fan" aria-label="Xem quạt máy">Xem ngay</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 poly-prod">
+                    <div class="panel panel-default product-card">
+                        <div class="panel-heading"><h3 class="panel-title">Smart TV 4K</h3><span class="label label-warning">Mới</span></div>
+                        <div class="panel-body"><img src="images/tv.svg" alt="Smart TV 4K" class="img-responsive center-block"><p class="product-description">Giải trí sống động với màn hình sắc nét.</p></div>
+                        <div class="panel-footer"><span class="price">$410.00</span><a class="btn btn-primary btn-xs" href="#tv" aria-label="Xem Smart TV">Xem ngay</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 poly-prod">
+                    <div class="panel panel-default product-card">
+                        <div class="panel-heading"><h3 class="panel-title">Tủ lạnh mini</h3></div>
+                        <div class="panel-body"><img src="images/fridge.svg" alt="Tủ lạnh mini" class="img-responsive center-block"><p class="product-description">Tiết kiệm diện tích, tiện lợi mỗi ngày.</p></div>
+                        <div class="panel-footer"><span class="price">$185.90</span><a class="btn btn-primary btn-xs" href="#fridge" aria-label="Xem tủ lạnh mini">Xem ngay</a></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <aside class="col-sm-3 sidebar">
+            <!-- Cart -->
+            <div class="poly-cart panel panel-default">
+                <div class="panel-heading"><span class="glyphicon glyphicon-shopping-cart"></span> <strong>Giỏ hàng</strong></div>
+                <div class="panel-body">
+                    <img class="cart-image" src="images/shoppingcart.svg" alt="Giỏ hàng">
+                    <ul>
+                        <li><strong>100</strong> items</li>
+                        <li class="cart-total">$56.80</li>
+                        <li><a href="#cart">Xem giỏ hàng <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="panel panel-default search-panel">
+                <div class="panel-heading"><span class="glyphicon glyphicon-search"></span> <strong>Tìm kiếm</strong></div>
+                <div class="panel-body">
+                    <form action="#search" method="get" role="search">
+                        <label class="sr-only" for="keywords">Từ khóa tìm kiếm</label>
+                        <div class="input-group">
+                            <input id="keywords" name="q" placeholder="Từ khóa..." class="form-control" type="search">
+                            <span class="input-group-btn"><button class="btn btn-default" type="submit" aria-label="Tìm kiếm"><span class="glyphicon glyphicon-search"></span></button></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="panel panel-default category-panel">
+                <div class="panel-heading"><span class="glyphicon glyphicon-th-list"></span> <strong>Chủng loại</strong></div>
+                <div class="list-group">
+                    <a href="#phones" class="list-group-item">Điện thoại di động <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                    <a href="#laptops" class="list-group-item">Máy tính xách tay <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                    <a href="#desktops" class="list-group-item">Máy tính để bàn <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                    <a href="#fans" class="list-group-item">Quạt máy <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                    <a href="#tvs" class="list-group-item">Tivi <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                    <a href="#fridges" class="list-group-item">Tủ lạnh <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                </div>
+            </div>
+            <div class="help-card" id="faq">
+                <span class="glyphicon glyphicon-heart"></span>
+                <p><strong>Cần hỗ trợ?</strong></p>
+                <p class="text-muted">Chúng tôi luôn sẵn sàng giúp bạn chọn sản phẩm phù hợp.</p>
+                <a href="#contact">Liên hệ hỗ trợ</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="panel panel-default shop-footer" id="contact">
+        <div class="panel-heading text-center">
+            <p>Online Shopping Mall <span class="footer-separator">•</span> Thực hành Bootstrap 3</p>
+            <small>© 2026 Online Shopping Mall. Bài tập thực hành giao diện.</small>
+        </div>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
